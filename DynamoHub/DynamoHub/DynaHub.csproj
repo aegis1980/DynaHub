@@ -227,6 +227,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MM-Logo-Black.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!--Using AfterBuild Events to copy the extension to the Dynamo packages folder-->
   <Target Name="AfterBuild">

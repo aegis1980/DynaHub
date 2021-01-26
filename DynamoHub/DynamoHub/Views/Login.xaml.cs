@@ -135,15 +135,15 @@ namespace DynaHub.Views
 
         // Store login credentials
         private static string GHtok = null;
-        internal static string GHemail = null;
-        internal static string GHpassword = null;
+        //internal static string GHemail = null;
+        //internal static string GHpassword = null;
 
         private async void Login_ClickAsync(object sender, RoutedEventArgs e)
         {
             // Get user inputs
             GHtok = token.Password;
-            GHemail = email.Text;
-            GHpassword = Password.Password;
+           // GHemail = email.Text;
+           // GHpassword = Password.Password;
 
             User user = null;
 
@@ -152,11 +152,12 @@ namespace DynaHub.Views
             {
                 user = await GitHubConnection.LoginAsync(GHtok);
             }
+            /*
             else if (GHemail != "email address" && GHpassword != "password")
             {
                 user = await GitHubConnection.LoginAsync(GHemail, GHpassword);
             }
-
+            */
             // Pop up splash screen in the meantime
             SplashWindow verificationSplash = new SplashWindow(GlobalSettings.validationUri);
 

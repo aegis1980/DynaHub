@@ -11,46 +11,6 @@
              ResizeMode="NoResize">
 
     <TabControl VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5">
-        <TabItem Header="Login with GitHub credentials">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="80"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                
-                <StackPanel Grid.Row="0" VerticalAlignment="Stretch" Margin="5">
-                    <Label
-                        Content="Email address:" HorizontalAlignment="Left" VerticalAlignment="Top"
-                        FontWeight="Bold" Margin="5,5,0,0"/>
-                    <TextBox Name="email" Text="email address"
-                        HorizontalAlignment="Stretch" Height="30"
-                        VerticalAlignment="Bottom" Margin="5" FontStyle="Italic"
-                        VerticalContentAlignment="Center"
-                        GotFocus="field_GotFocus" LostFocus="field_LostFocus"/>
-                </StackPanel>
-                <StackPanel Grid.Row="1" VerticalAlignment="Stretch" Margin="5">
-                    <Label 
-                        Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Top"
-                        FontWeight="Bold" Margin="5,5,0,0"/>
-                    <PasswordBox Name="Password" Password="password"
-                        HorizontalAlignment="Stretch" Height="30"
-                        VerticalAlignment="Bottom" Margin="5" FontStyle="Italic"
-                        VerticalContentAlignment="Center"
-                        GotFocus="pass_GotFocus" LostFocus="pass_LostFocus"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Grid.Row="2">
-                    <Button 
-                        Margin="10" VerticalAlignment="Center"
-                        Height="20" Width="100"
-                        IsDefault="True" Click="Login_ClickAsync" Grid.ColumnSpan="2">
-                        Login</Button>
-                    <Image
-                        Source="pack://application:,,,/DynaHub;component/Resources/DynaHubLogo.png"
-                        Margin="60,10,10,10"/>
-                </StackPanel>
-            </Grid>
-        </TabItem>
 
         <TabItem Header="Login with token">
             <Grid>

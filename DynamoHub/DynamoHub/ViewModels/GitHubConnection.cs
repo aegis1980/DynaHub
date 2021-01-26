@@ -32,6 +32,7 @@ namespace DynaHub.ViewModels
             return user;
         }
 
+        /*
         internal static async Task<User> LoginAsync(string GHemail, string GHpassword)
         {
             // Authenticate through personal access token
@@ -48,7 +49,7 @@ namespace DynaHub.ViewModels
 
             return user;
         }
-
+        */
         internal static void GreetUser(User user)
         {
             string baseGreet = "You logged in successfully";
